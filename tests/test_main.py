@@ -1,5 +1,5 @@
 import pytest
-
+from app.main import app, tasks
 
 async def test_health(client):
     response = await client.get("/health")
